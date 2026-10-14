@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/blog/how-do-i-choose-the-right-hvac-specialist-in-rosharon.html",
+      "destination": "/blog/how-do-i-choose-the-right-hvac-specialist-in-san-antonio.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/who-can-i-call-for-reliable-hvac-repairs-in-houston.html",
+      "destination": "/blog/who-can-i-call-for-reliable-hvac-repairs-in-san-antonio.html",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-can-i-ensure-my-hvac-system-is-ready-for-houstons-weather.html",
+      "destination": "/blog/how-can-i-ensure-my-hvac-system-is-ready-for-san-antonios-weather.html",
+      "permanent": true
+    }
+  ]
+}
