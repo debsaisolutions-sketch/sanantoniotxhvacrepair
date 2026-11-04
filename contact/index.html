@@ -57,13 +57,26 @@
         <div>
           <h2>Send a Message</h2>
           <p>Include your community (Stone Oak, Schertz, Helotes, etc.) and whether you need emergency cooling help or an install quote.</p>
-          <form class="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="margin-left:0;">
+          <form class="lead-form" id="leadForm" style="margin-left:0;">
+            <div class="hp-field" aria-hidden="true">
+              <label for="company_website">Company website</label>
+              <input id="company_website" type="text" name="company_website" tabindex="-1" autocomplete="off" />
+            </div>
             <label for="name">Name</label>
             <input id="name" type="text" name="name" required />
             <label for="email">Email</label>
             <input id="email" type="email" name="email" required />
             <label for="phone">Phone</label>
             <input id="phone" type="tel" name="phone" required />
+            <label for="service">Service</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>AC Repair</option>
+              <option>Furnace &amp; Heating Repair</option>
+              <option>HVAC Maintenance</option>
+              <option>New System Installation</option>
+              <option>Other</option>
+            </select>
             <label for="area">Service area</label>
             <select id="area" name="area">
               <option value="">Select an area</option>
@@ -137,5 +150,6 @@
     </div>
   </footer>
   <script src="https://www.tradedeskpro.com/js/tdp-lead-attribution.js" defer></script>
+  <script src="/js/tdp-leads.js" defer></script>
 </body>
 </html>

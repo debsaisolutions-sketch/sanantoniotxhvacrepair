@@ -1,5 +1,9 @@
 {
   "name": "sanantoniotxhvacrepair",
   "private": true,
-  "description": "San Antonio Tx HVAC Repair"
+  "description": "San Antonio Tx HVAC Repair",
+  "scripts": {
+    "check": "node scripts/check-site.js",
+    "test": "node --test scripts/test-leads.js"
+  }
 }
