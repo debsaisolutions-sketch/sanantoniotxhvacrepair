@@ -166,13 +166,41 @@
     <section id="estimate">
       <h2>Get Your Free HVAC Estimate</h2>
       <p style="text-align:center;">Call <a href="tel:+12109425218">(210) 942-5218</a> or send details below.</p>
-      <form class="lead-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form class="lead-form" id="leadForm">
+        <div class="hp-field" aria-hidden="true">
+          <label for="company_website">Company website</label>
+          <input id="company_website" type="text" name="company_website" tabindex="-1" autocomplete="off" />
+        </div>
         <label for="name">Name</label>
         <input id="name" type="text" name="name" required />
         <label for="email">Email</label>
         <input id="email" type="email" name="email" required />
         <label for="phone">Phone</label>
         <input id="phone" type="tel" name="phone" required />
+        <label for="service">Service</label>
+        <select id="service" name="service">
+          <option value="">Select a service</option>
+          <option>AC Repair</option>
+          <option>Furnace &amp; Heating Repair</option>
+          <option>HVAC Maintenance</option>
+          <option>New System Installation</option>
+          <option>Other</option>
+        </select>
+        <label for="area">Service area</label>
+        <select id="area" name="area">
+          <option value="">Select an area</option>
+          <option>Stone Oak</option>
+          <option>Schertz</option>
+          <option>Helotes</option>
+          <option>New Braunfels</option>
+          <option>Seguin</option>
+          <option>Scenic Park</option>
+          <option>Leon Valley</option>
+          <option>Converse</option>
+          <option>Cibolo</option>
+          <option>Universal City</option>
+          <option>Other Greater San Antonio</option>
+        </select>
         <label for="message">How can we help?</label>
         <textarea id="message" name="message" rows="5" required></textarea>
         <button type="submit">Request Free Estimate</button>
@@ -219,5 +247,6 @@
     </div>
   </footer>
   <script src="https://www.tradedeskpro.com/js/tdp-lead-attribution.js" defer></script>
+  <script src="/js/tdp-leads.js" defer></script>
 </body>
 </html>
